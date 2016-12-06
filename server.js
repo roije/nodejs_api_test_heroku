@@ -18,4 +18,10 @@ app.use(usersQueries);
 app.use(productQueries);
 app.use(orderQueries);
 
+app.use(function(req, res) {
+    res.status(404);
+    res.send({ 'msg': 'Page Not Found' });
+});
+
+
 app.listen(process.env.PORT ||3000);
