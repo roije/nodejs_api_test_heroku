@@ -18,4 +18,4 @@ app.use(usersQueries);
 app.use(productQueries);
 app.use(orderQueries);
 
-app.listen(3000);
+app.listen(process.env.PORT ||3000);
