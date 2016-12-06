@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
 var express = require('express');
 var app = express();
-var url = require('../config.js').mongodb;
+var url = require('../config/config.js').mongodb;
 
 //GET ALL USERS
 app.get('/users', function(req, res) {

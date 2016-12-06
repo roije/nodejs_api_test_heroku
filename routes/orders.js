@@ -5,7 +5,7 @@ var express = require('express');
 var app = express();
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
-var url = require('../config.js').mongodb;
+var url = require('../config/config.js').mongodb;
 
 //var url = 'mongodb://localhost:27017/store';
 
